@@ -1,0 +1,97 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-25T06:09:36.479Z",
+    "end": "2022-09-25T06:09:36.826Z",
+    "duration": 347,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "e8f13306-4831-4646-9424-7a166a037299",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "47b77b35-49f9-421b-869e-a676c939d120",
+        "title": "Beer List",
+        "fullFile": "/Users/rizkaviosudiro/portofolio/mocha-chai/api/test/get_list.js",
+        "file": "/api/test/get_list.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@get As a User, I want to be able to get beer list",
+            "fullTitle": "Beer List @get As a User, I want to be able to get beer list",
+            "timedOut": false,
+            "duration": 242,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "for(counter = 0; counter < per_page.length; counter++){\n    const response = await page.getDataPerPage(halaman, per_page[counter]);\n    expect(response.status).to.equal(200);\n    expect(response.body).to.have.lengthOf(per_page[counter]);\n}",
+            "err": {},
+            "isRoot": false,
+            "uuid": "274be9cd-2abc-4e2a-a335-5964e04702a5",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "@get As a user, I want to validate json schema",
+            "fullTitle": "Beer List @get As a user, I want to validate json schema",
+            "timedOut": false,
+            "duration": 99,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const data = 25\nconst response = await page.getData();\n//   console.log(response.body);\nexpect(response.body).to.have.lengthOf(data);\nexpect(response.status).to.equal(200);\nexpect(response.body).to.be.jsonSchema(file);\n  for(n = 0; n < data;n++){\n      console.log(n, response.body[n].name);\n  }",
+            "err": {},
+            "isRoot": false,
+            "uuid": "692dabbc-f684-471a-b896-64211b307bcd",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "274be9cd-2abc-4e2a-a335-5964e04702a5",
+          "692dabbc-f684-471a-b896-64211b307bcd"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 341,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 180000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 180000
+  },
+  "copyrightYear": 2022
+}
